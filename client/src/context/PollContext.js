@@ -1,7 +1,7 @@
 import React, { createContext, useState, useContext } from "react";
 
 import io from "socket.io-client";
-export const socket = io("http://localhost:4000");
+export const socket = io("https://livepolling-ljgq.onrender.com");
 
 const PollContext = createContext();
 
