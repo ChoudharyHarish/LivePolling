@@ -79,6 +79,10 @@ function emitAggregatedResults() {
   io.emit("poll:update_results", countMap);
 }
 
+app.get("/", (req, res) => {
+  res.send("Socket.IO Polling Server is running");
+});
+
 server.listen(4000, () => {
   console.log("Server is running on http://localhost:4000");
 });
